@@ -10,7 +10,7 @@ export default function Layout({ children }) {
   useEffect(() => {
     const user = localStorage.getItem('user');
     if (!user && router.pathname !== '/login') {
-      router.replace('/login');  // Redirige al login si el usuario no está autenticado
+      router.replace('/login');
     }
   }, [router]);
 
